@@ -1,6 +1,4 @@
 const path = require('path');
-const { dirname } = require('path');
-const { fileURLToPath } = require('url');
 const CopyPlugin = require('copy-webpack-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const HtmlWebpackPlugin = require('html-webpack-plugin');

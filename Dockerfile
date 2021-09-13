@@ -1,9 +1,10 @@
 ## Build layer
 FROM node:16.0.0 AS builder 
 WORKDIR /app
-COPY . .
+COPY package*.json .
 RUN npm install
-RUN npm run prod:webpack
+COPY . .
+RUN npm run build
 
 ## Production layer
 FROM alpine
@@ -15,4 +16,4 @@ RUN apk add --update nodejs npm
 RUN npm install --only=prod
 RUN addgroup -S app && adduser -S prod -G app
 USER prod
-CMD ["npm", "run", "prod:express"]
+CMD ["npm", "run", "serve"]

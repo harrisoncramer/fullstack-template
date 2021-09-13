@@ -7,9 +7,9 @@
     "start": "concurrently \"npm run dev:webpack\" \"npm run dev:express\"",
     "dev:webpack": "NODE_ENV=development webpack serve --config ./webpack/webpack.dev.js",
     "dev:express": "NODE_ENV=development PORT=3000 nodemon server/index.js",
-    "prod:webpack": "NODE_ENV=production webpack --config ./webpack/webpack.prod.js",
-    "prod:express": "NODE_ENV=production PORT=3000 node server/index.js",
-    "prod:analyze": "NODE_ENV=production ANALYZE=true webpack --config ./webpack/webpack.prod.js"
+    "build": "NODE_ENV=production webpack --config ./webpack/webpack.prod.js",
+    "serve": "NODE_ENV=production PORT=3000 node server/index.js",
+    "analyze": "NODE_ENV=production ANALYZE=true webpack --config ./webpack/webpack.prod.js"
   },
   "keywords": [],
   "author": "",
