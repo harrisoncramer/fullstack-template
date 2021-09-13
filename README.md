@@ -11,3 +11,7 @@ This is a template repository for a full-stack, dockerized application using Rea
 - Lazy-loading for optimization
 - BundleAnalyzerPlugin for bundle management
 - URL Loader for Images/Assets
+
+## Future Changes
+
+I'm going to add Github actions for CI/CD and Jest for testing.
