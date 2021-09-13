@@ -4,15 +4,18 @@ const path = require('path');
 const app = express();
 app.use(express.json());
 
-const PORT = 3000;
-
-app.use('/', express.static(path.resolve(__dirname, '..', 'build')));
-
-// Catch all other GETs and serve SPA
-app.get('/*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+app.get('/api/v1', (req, res) => {
+  res.status(200).send('Welcome to the API.');
 });
 
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
+/* Only serve static content in production. Use WDS in development. */
+if (process.env.NODE_ENV === 'production') {
+  app.use('/', express.static(path.resolve(__dirname, '..', 'build')));
+  app.get('/*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+  });
+}
+
+app.listen(3000, () => {
+  console.log(`App listening on port 3000.`);
 });
