@@ -12,7 +12,7 @@ app.get('/api/v1', (req, res) => {
 if (process.env.NODE_ENV === 'production') {
   app.use('/', express.static(path.resolve(__dirname, '..', 'build')));
   app.get('/*', (req, res) => {
-    res.redirect(301, '/');
+    res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
   });
 }
 
