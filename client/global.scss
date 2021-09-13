@@ -1,0 +1,24 @@
+@use './variables';
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto';
+  background: #f8f9fa;
+}
+
+button {
+  font-family: 'Roboto';
+}
+
+.content-wrapper {
+  max-width: 960px;
+  margin: 3em auto 0 auto;
+}
+
+a {
+  color: variables.$theme-color-complementary;
+  &:hover {
+    color: variables.$theme-color-hover;
+  }
+}
