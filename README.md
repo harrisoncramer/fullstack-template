@@ -6,8 +6,8 @@ This is a template repository for a full-stack, dockerized application using Rea
 - Webpack proxying for backend
 - Multi-stage docker build for minimal image
 - SASS & loaders for styling
+- Express for SPA backend
 - React-router for routes
 - Lazy-loading for optimization
-- BundleAnalyzerPlugin
-- URL Loader for Images/Assets  
-- robots.txt for SEO
+- BundleAnalyzerPlugin for bundle management
+- URL Loader for Images/Assets
