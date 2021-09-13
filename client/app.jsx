@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Header';
-import Home from './views/Home';
+
+const Home = lazy(() => import('./components/Home'));
+
+import './global.scss';
 
 const App = () => {
   return (

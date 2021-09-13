@@ -39,11 +39,15 @@ module.exports = {
     ],
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [{ from: './client/assets/robots.txt', to: '.' }],
+    }),
     new Dotenv({
       path: path.resolve(__dirname, `../.${process.env.NODE_ENV}.env`),
     }),
     new HtmlWebpackPlugin({
       template: './client/index.html',
+      favicon: './client/assets/favicon.ico',
     }),
   ],
   resolve: {
