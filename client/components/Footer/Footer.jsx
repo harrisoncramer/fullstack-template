@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Footer = (props) => {
+const Footer = () => {
   return (
     <>
-      <div>Hello</div>
+      <div>This is the footer</div>
     </>
   );
 };
