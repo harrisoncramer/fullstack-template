@@ -11,10 +11,12 @@ This is a template repository for a full-stack, dockerized application using Rea
 - Lazy-loading for optimization
 - BundleAnalyzerPlugin for bundle management
 - URL Loader for Images/Assets
-- Jest for testing
+- Jest for test running
+- Supertest for backend tests
+- React-Testing-Library for frontend tests
 - Github Actions for CI
 - ESLint for Linting
 
 ## Future Changes
 
-I'm going to add Github actions for CI/CD and Jest for testing.
+- Please leave a pull request or comment if you'd like to see me add something to this repository. I'm trying to keep it relatively vanilla so that it's a good boilerplate, but could be convinced to add certain tools/configuration if it's appropriate.
