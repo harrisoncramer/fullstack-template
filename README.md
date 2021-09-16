@@ -24,6 +24,7 @@ This is a template repository for a full-stack, dockerized application using Rea
 ## Docker
 
 Build the image: `docker build -t yourusername/yourapp . `;
+
 Run the image (map the ports): `docker run -dit -p 3000:3000 yourusername/yourapp`;
 
 ## Github Actions 
