@@ -17,6 +17,25 @@ This is a template repository for a full-stack, dockerized application using Rea
 - Docker for containerization
 - ESLint for Linting
 
+## Installation
+
+`npm install`
+
+## Development
+
+`npm run start`
+
+For backend only: `npm run dev:express`
+For frontend only: `npm run dev:webpack`
+
+## Tests
+
+`npm run test`
+
+## Bundle Analysis
+
+`npm run analyze`
+
 ## Docker
 
 Build the image: `docker build -t yourusername/yourapp . `
