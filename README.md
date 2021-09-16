@@ -43,4 +43,6 @@ Build the image: `docker build -t yourusername/yourapp . `
 
 Run the image (map the ports): `docker run -dit -p 3000:3000 yourusername/yourapp`
 
-**The github actions in this repository are configured to build and push a Docker image to my account by default. You can either delete the `.github` folder or configure them with your own account + credentials. You may also delete the docker job, leaving the other CI tests in place.
+## Github Actions
+
+The github actions in this repository are configured to build and push a Docker image to my account by default. You can either delete the `.github` folder or configure them with your own account + credentials. You may also delete the docker job, leaving the other CI tests in place.
