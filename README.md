@@ -26,6 +26,7 @@ This is a template repository for a full-stack, dockerized application using Rea
 `npm run start`
 
 For backend only: `npm run dev:express`
+
 For frontend only: `npm run dev:webpack`
 
 ## Tests
