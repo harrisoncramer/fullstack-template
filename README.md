@@ -4,7 +4,6 @@ This is a template repository for a full-stack, dockerized application using Rea
 
 - Webpack production optimizations
 - Webpack proxying for backend
-- Multi-stage docker build for minimal image
 - SASS & loaders for styling
 - Express for SPA backend
 - React-router for routes
