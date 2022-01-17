@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <div>Home page</div>
+      <div className="text-blue-800">Home page</div>
       <button onClick={handleApiCall}>Fetch Data</button>
     </>
   );

@@ -1,4 +1,4 @@
-@use '../../variables';
+@use "../../variables";
 
 .loading-container {
   display: flex;

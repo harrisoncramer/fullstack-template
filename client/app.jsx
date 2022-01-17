@@ -1,13 +1,13 @@
-import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Loader from './components/Loader/Loader';
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Loader from "./components/Loader/Loader";
 
-const Home = lazy(() => import('./views/Home'));
-const About = lazy(() => import('./views/About'));
+const Home = lazy(() => import("./views/Home"));
+const About = lazy(() => import("./views/About"));
 
-import './global.scss';
+import "./global.css";
 
 const App = () => {
   return (
