@@ -1,20 +1,16 @@
 # React Template Repository
 
-This is a template repository for a full-stack, dockerized application using React, React-Router, Vite, Express, and SASS. It includes:
+This is a template repository for a full-stack, dockerized application using React, Vite, Express, and Tailwind. It includes:
 
 - Vite for fast reloads
-- SASS & loaders for styling
+- Tailwind for utility-first styling
 - Express for SPA backend
 - React-router for routes
 - Lazy-loading for optimization
-- BundleAnalyzerPlugin for bundle management
-- URL Loader for Images/Assets
-- Jest for test running
 - Supertest for backend tests
 - React-Testing-Library for frontend tests
 - Github Actions for CI\*\*
 - Docker for containerization
-- ESLint for Linting
 
 ## Installation
 
@@ -22,11 +18,11 @@ This is a template repository for a full-stack, dockerized application using Rea
 
 ## Development
 
-`npm run start`
+Full Dev: `npm run start`
 
-For backend only: `npm run start:express`
+Backend only: `npm run start:express`
 
-For frontend only: `npm run start:vite`
+Frontend only: `npm run start:vite`
 
 ## Tests
 
