@@ -1,9 +1,8 @@
 # React Template Repository
 
-This is a template repository for a full-stack, dockerized application using React, React-Router, Webpack, Express, and SASS. It includes:
+This is a template repository for a full-stack, dockerized application using React, React-Router, Vite, Express, and SASS. It includes:
 
-- Webpack production optimizations
-- Webpack proxying for backend
+- Vite for fast reloads
 - SASS & loaders for styling
 - Express for SPA backend
 - React-router for routes
@@ -13,7 +12,7 @@ This is a template repository for a full-stack, dockerized application using Rea
 - Jest for test running
 - Supertest for backend tests
 - React-Testing-Library for frontend tests
-- Github Actions for CI**
+- Github Actions for CI\*\*
 - Docker for containerization
 - ESLint for Linting
 
@@ -25,17 +24,13 @@ This is a template repository for a full-stack, dockerized application using Rea
 
 `npm run start`
 
-For backend only: `npm run dev:express`
+For backend only: `npm run start:express`
 
-For frontend only: `npm run dev:webpack`
+For frontend only: `npm run start:vite`
 
 ## Tests
 
 `npm run test`
-
-## Bundle Analysis
-
-`npm run analyze`
 
 ## Docker
 
@@ -45,4 +40,4 @@ Run the image (map the ports): `docker run -dit -p 3000:3000 yourusername/yourap
 
 ## Github Actions
 
-The github actions in this repository are configured to build and push a Docker image to my account by default. You can either delete the `.github` folder or configure them with your own account + credentials. You may also delete the docker job, leaving the other CI tests in place.
+The github actions in this repository are configured to build and push a Docker image to my account by default. You can either delete the `.github` folder or configure them with your own account and credentials. You may also delete the docker job, leaving the other CI tests in place.
