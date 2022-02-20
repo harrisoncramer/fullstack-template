@@ -25,6 +25,7 @@
     "@testing-library/react": "^12.1.0",
     "@vitejs/plugin-react": "^1.1.4",
     "autoprefixer": "^10.4.2",
+    "babel-plugin-transform-vite-meta-env": "^1.0.3",
     "concurrently": "^7.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.25.1",

@@ -1,13 +1,14 @@
 module.exports = {
+  plugins: ["babel-plugin-transform-vite-meta-env"],
   presets: [
     [
-      '@babel/preset-env',
+      "@babel/preset-env",
       {
         targets: {
-          node: 'current',
+          node: "current",
         },
       },
     ],
-    '@babel/preset-react',
+    "@babel/preset-react",
   ],
 };
